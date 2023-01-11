@@ -1,9 +1,15 @@
+import {} from 'dotenv/config';
 import { Sequelize } from 'sequelize';
 
-const sequelize = new Sequelize('teste_athenas', 'admin', '12345678', {
-  host: 'database-athenas-teste.cse7s6m55guz.us-east-1.rds.amazonaws.com',
-  dialect: 'mysql',
-});
+const sequelize = new Sequelize(
+  'teste_athenas',
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    dialect: 'mysql',
+  }
+);
 
 sequelize
   .authenticate()
