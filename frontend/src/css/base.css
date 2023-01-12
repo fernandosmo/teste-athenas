@@ -6,15 +6,12 @@ header {
   background: #0d0f10;
   display: flex;
   height: 120px;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
 .header--logo {
   display: flex;
-  position: absolute;
-  left: 10vw;
-  top: 10px;
 }
 
 .header--logo img {
@@ -24,7 +21,7 @@ header {
 .header--title {
   color: #ffffff;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 2vw;
   align-items: center;
 }
 
@@ -64,4 +61,13 @@ footer {
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 960px) {
+  .header--logo {
+    display: none;
+  }
+  .header--title {
+    text-align: center;
+  }
 }
