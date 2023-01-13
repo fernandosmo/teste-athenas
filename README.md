@@ -11,7 +11,9 @@ o link do site é
 
 **Front-end:** JavaScript, JQuery, Bootstrap, DevExpres, Render
 
-**Back-end:** Node, Express, MySQL, Sequelize, Render
+**Back-end:** Node, Express, Sequelize, Render
+
+**Banco de dados** MySQL, AWS RDS
 
 ## Author
 
