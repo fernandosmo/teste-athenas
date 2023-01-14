@@ -5,9 +5,13 @@ body {
 header {
   background: #0d0f10;
   display: flex;
-  height: 120px;
+  height: 90px;
   justify-content: space-around;
   width: 100%;
+}
+
+main {
+  height: calc(100vh - 150px);
 }
 
 .header--logo {
@@ -15,7 +19,8 @@ header {
 }
 
 .header--logo img {
-  height: 100px;
+  height: 80px;
+  margin: 5px 0;
 }
 
 .header--title {
@@ -27,32 +32,25 @@ header {
 
 #gridContainer {
   display: flex;
-  margin: 2vh 0;
+  padding: 2vh 0;
 }
 
 footer {
   bottom: 0;
-  padding-top: 15%;
   position: fixed;
   width: 100%;
 }
 
 .footer {
-  height: 75px;
   display: flex;
   background: #0d0f10;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.footer--logo {
-  border: none;
-  padding-right: 10vw;
-}
-
 .footer--logo img {
-  height: 50px;
-  margin-right: 15px;
+  height: 40px;
+  margin: 10px 0;
   opacity: 0.5;
 }
 
@@ -61,6 +59,10 @@ footer {
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.footer--credits p {
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 960px) {
