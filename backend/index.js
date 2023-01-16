@@ -3,6 +3,10 @@ import cors from 'cors';
 
 import userRoutes from './src/routes/userRoutes.js';
 
+import db from './src/database/db.js';
+
+db.sync();
+
 const app = express();
 
 app.use(express.json({ limit: '10kb' }));

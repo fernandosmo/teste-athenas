@@ -2,7 +2,7 @@ import {} from 'dotenv/config';
 import { Sequelize } from 'sequelize';
 
 const sequelize = new Sequelize(
-  'teste_athenas',
+  process.env.DB_NAME,
   process.env.DB_USER,
   process.env.DB_PASSWORD,
   {

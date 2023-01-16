@@ -13,7 +13,7 @@ o link do site é
 
 **Back-end:** Node, Express, Sequelize, Render
 
-**Banco de dados** MySQL, AWS RDS
+**Banco de dados** MySQL
 
 ## Author
 
